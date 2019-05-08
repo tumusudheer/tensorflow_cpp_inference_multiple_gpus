@@ -1,0 +1,9 @@
+g++ -O4 -std=c++11 -o ./bin/main_multiple_images_parallel_gpu.out \
+-I ./include \
+-I ./include/third_party \
+-I ./include/third_party/eigen3 \
+./src/main_multiple_images_parallel.cc \
+-L ./libs \
+-lpthread \
+$PWD/libs/libtensorflow_cc_gpu.so \
+$PWD/libs/libtensorflow_framework.so

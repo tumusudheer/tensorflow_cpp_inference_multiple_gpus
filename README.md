@@ -8,5 +8,5 @@ git clone https://github.com/tensorflow/tensorflow.git
 git checkout r1.12
 ./configure
 
-bazel build --config=monolithic --config=cuda //tensorflow:libtensorflow_cc.so
+bazel build --config=cuda //tensorflow:libtensorflow_cc.so
 ```

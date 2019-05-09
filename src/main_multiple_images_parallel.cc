@@ -272,6 +272,7 @@ void *Perform_Computation_Parallel(void *arg1)
       //return -1;
     }
   }
+  free(image_path);
 }
 
 void Perform_Computation(void)
